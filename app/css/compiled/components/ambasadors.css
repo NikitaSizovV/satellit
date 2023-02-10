@@ -2,7 +2,7 @@
   background-image: url("../src/images/ambasadors.png");
   width: 100%;
   background-size: cover;
-  min-height: 790px;
+  min-height: 590px;
 }
 @media (max-width: 769px) {
   .ambasadors {
@@ -51,7 +51,7 @@
   }
 }
 .ambasadors .slick-slider {
-  min-height: 382px;
+  min-height: 422px;
   padding-top: 15px;
 }
 .ambasadors .slick-arrow {
@@ -59,6 +59,9 @@
   height: 48px;
   width: 48px;
   background-size: cover;
+  -webkit-transform: translate(0, 0%) !important;
+      -ms-transform: translate(0, 0%) !important;
+          transform: translate(0, 0%) !important;
 }
 .ambasadors .slick-arrow::before {
   content: " ";

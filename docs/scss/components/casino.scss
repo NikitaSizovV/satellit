@@ -1,0 +1,57 @@
+.infiniteslide{
+    margin-top: 24px;
+    &__container{
+        display: flex;
+    }
+    &__item{
+        height: 164px;
+        width: 282px;
+        margin-left: 20px;
+        position: relative;
+    }
+    &__img{
+        height: 164px;
+        width: 282px;
+    }
+    &__layout{
+        position: absolute;
+        background: rgba(0,0,0,0);
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0;
+        transition: 0,5s;
+        &:hover{
+            opacity: 1;
+            background: rgba(0,0,0,0.6);
+        }
+        .button{
+            height: 35px;
+            width: 140px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 35px;
+            text-align: center;
+            border-radius: 1000px;
+            transition: 0.4s;
+            cursor: pointer;
+            &:hover{
+                filter: brightness(130%);
+            }
+            &.game{
+                background: #378DCB;
+                border: 1px solid #378DCB;
+            }
+            &.demo{
+                border: 1px solid white;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+
+.infiniteslide__container.provider{
+    .infiniteslide__item{
+        height: 164px;
+        width: 282px;
+        background: #DEDEDE;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 124px;
+            width: auto;
+        }
+    }
+}

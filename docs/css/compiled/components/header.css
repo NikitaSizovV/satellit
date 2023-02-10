@@ -22,6 +22,12 @@ body {
   padding: 10px;
   background: hsl(208deg, 61%, 32%);
   gap: 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 100;
+}
+.topnav * {
+  z-index: 100;
 }
 .topnav__logo {
   padding: 0 !important;

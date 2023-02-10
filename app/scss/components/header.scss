@@ -16,6 +16,11 @@ body {
     padding: 10px;
     background: hsl(208,61%,32%);
     gap: 5px;
+    justify-content: space-around;
+    z-index: 100;
+    *{
+        z-index: 100;
+    }
     &__logo{
         padding: 0!important;
         max-height: 24px;

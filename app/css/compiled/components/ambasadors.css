@@ -81,9 +81,9 @@
   }
 }
 .ambasadors .slick-next {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(180deg) !important;
+      -ms-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
   margin-right: -48px;
 }
 .ambasadors .slick-prev {

@@ -75,6 +75,7 @@
 }
 .main-game__button {
   border-radius: 8px;
+  width: 320px;
 }
 @media (max-width: 570px) {
   .main-game__button {

@@ -57,6 +57,7 @@
     }
     &__button{
         border-radius: 8px;
+        width: 320px;
         @media (max-width: 570px) {
             font-size: 26px;
             width: 260px;

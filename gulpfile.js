@@ -19,7 +19,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 gulp.task('webp', () =>
 gulp.src('app/src/**/*.png')
     .pipe(webp())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs'))
 );
 
 gulp.task('scss', function() { // Создаем таск scss
@@ -41,8 +41,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
-        'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
-        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
+        'app/libs/jquery/docs/jquery.min.js', // Берем jQuery
+        'app/libs/magnific-popup/docs/jquery.magnific-popup.min.js' // Берем Magnific Popup
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
@@ -63,12 +63,12 @@ gulp.task('css-libs', function() {
 });
 
 gulp.task('clean', async function() {
-    return del.sync('dist'); // Удаляем папку dist перед сборкой
+    return del.sync('docs'); // Удаляем папку docs перед сборкой
 });
 
 gulp.task('img', function() {
     return gulp.src('app/src/**/*') // Берем все изображения из app
-        .pipe(gulp.dest('dist/src')); // Выгружаем на продакшен
+        .pipe(gulp.dest('docs/src')); // Выгружаем на продакшен
 });
 
 gulp.task('prebuild', async function() {
@@ -76,16 +76,16 @@ gulp.task('prebuild', async function() {
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
         'app/css/*.css'
         ])
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('docs/css'))
 
     var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('docs/fonts'))
 
     var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('docs/js'))
 
     var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('docs'));
 
 });
 gulp.task('concat', function() {

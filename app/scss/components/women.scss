@@ -22,10 +22,10 @@
     }
 }
 .women1::after{
-    background-image: url('../src/images/women1.png');
+    background-image: url('../src/images/women1.webp');
 }
 .women2::after{
-    background-image: url('../src/images/women2.png');
+    background-image: url('../src/images/women2.webp');
 }
 
 .tile.small{
@@ -47,21 +47,21 @@
     }
     .women3::after{
         width: 224px;
-        background-image: url('../src/images/women3.png');
+        background-image: url('../src/images/women3.webp');
         @media screen and (max-width: 1280px) {
             width: 190px;
         }
     }
     .women4::after{
         right: 15px;
-        background-image: url('../src/images/women4.png');
+        background-image: url('../src/images/women4.webp');
         @media screen and (max-width: 1280px) {
             width: 130px;
         }
     }
     .women5::after{
         width: 232px;
-        background-image: url('../src/images/women5.png');
+        background-image: url('../src/images/women5.webp');
         @media screen and (max-width: 1280px) {
             width: 190px;
         }

@@ -58,13 +58,13 @@
 .slot-data__tile {
   width: 100%;
   height: 300px;
-  background-image: url("../src/images/slot-data.png");
+  background-image: url("../src/images/slot-data.webp");
   position: relative;
   background-size: contain;
   border-radius: 16px;
 }
 .slot-data__tile::after {
-  background-image: url("../src/images/slot-girl.png");
+  background-image: url("../src/images/slot-girl.webp");
   content: "";
   position: absolute;
   height: 339px;

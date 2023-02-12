@@ -51,6 +51,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
   }
 }
 .tile__container {
@@ -104,7 +106,7 @@
   }
 }
 .tile__item.messi::after {
-  background-image: url("../src/images/messi.png");
+  background-image: url("../src/images/messi.webp");
   height: 422px;
   width: 313px;
   bottom: -40px;
@@ -124,7 +126,7 @@
   }
 }
 .tile__item.lepko::after {
-  background-image: url("../src/images/lepko.png");
+  background-image: url("../src/images/lepko.webp");
   height: 374px;
   width: 382px;
 }

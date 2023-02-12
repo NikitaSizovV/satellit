@@ -27,9 +27,6 @@ body {
         &:hover{
             background: none!important;
         }
-        @media (max-width: 1259px){
-            margin: 0 auto;
-        }
     }
     .logo{
         height: 24px;
@@ -45,12 +42,14 @@ body {
         color: white;
         margin: 0 5px;
         max-width: 320px;
+        line-height: 32px;
         @media screen and (max-width: 1110px) {
-            margin: 5px 0;
+            margin: 0 5px;
         }
         @media (max-width: 1510px){
             height: 26px;
             width: 26px;
+            line-height: 26px;
         }
         &:hover{
             background: hsl(208,62%,40%);
@@ -70,6 +69,9 @@ body {
         &.login, &.signup{
             width: auto;
             padding: 0 15px;
+            @media (max-width: 1259px){
+                display: block!important;
+            }
         }
         &.login{
             background:hsl(82,56%,50%) ;

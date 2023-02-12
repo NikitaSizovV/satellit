@@ -36,11 +36,6 @@ body {
 .topnav__logo:hover {
   background: none !important;
 }
-@media (max-width: 1259px) {
-  .topnav__logo {
-    margin: 0 auto;
-  }
-}
 .topnav .logo {
   height: 24px;
 }
@@ -61,16 +56,18 @@ body {
   color: white;
   margin: 0 5px;
   max-width: 320px;
+  line-height: 32px;
 }
 @media screen and (max-width: 1110px) {
   .topnav__btn {
-    margin: 5px 0;
+    margin: 0 5px;
   }
 }
 @media (max-width: 1510px) {
   .topnav__btn {
     height: 26px;
     width: 26px;
+    line-height: 26px;
   }
 }
 .topnav__btn:hover {
@@ -88,6 +85,11 @@ body {
 .topnav__btn.login, .topnav__btn.signup {
   width: auto;
   padding: 0 15px;
+}
+@media (max-width: 1259px) {
+  .topnav__btn.login, .topnav__btn.signup {
+    display: block !important;
+  }
 }
 .topnav__btn.login {
   background: hsl(82deg, 56%, 50%);

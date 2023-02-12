@@ -1,5 +1,6 @@
 const scss = require('gulp-sass')(require('sass'));
 scss.compiler = require('sass');
+const webp = require('gulp-webp');
 var gulp       = require('gulp'), // Подключаем Gulp
     browserSync  = require('browser-sync'), // Подключаем Browser Sync
     concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
@@ -13,6 +14,13 @@ var gulp       = require('gulp'), // Подключаем Gulp
     autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
     concat       = require('gulp-concat'),
     livereload = require('gulp-livereload');
+
+     
+gulp.task('webp', () =>
+gulp.src('app/src/**/*.png')
+    .pipe(webp())
+    .pipe(gulp.dest('dist'))
+);
 
 gulp.task('scss', function() { // Создаем таск scss
     return gulp.src('app/scss/**/*.scss') // Берем источник

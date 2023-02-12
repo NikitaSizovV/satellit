@@ -5,11 +5,484 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/compiled/concat.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/eb94f992ff.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <header class="topnav" id="myTopnav">
+        <a class="topnav__logo">
+            <img src="src/images/logo.webp" class="logo" alt="">
+        </a>
+        <nav class="topnav__nav">
+        <div class="dropdown">
+            <button class="dropbtn">Thể Thao 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Live 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">1XGames 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Casino 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Casino Trực Tuyến 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <a href="#about">Esports</a>
+        <div class="dropdown">
+            <button class="dropbtn">Promo</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <a href="#about">Bingo</a>
+        <div class="dropdown">
+            <button class="dropbtn">Thêm 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <a href="#" class="fruit">
+            <img src="src/images/fruit.webp" alt="">
+        </a>
+        <div class="topnav__btn dropdown dollar dropbtn">
+            <svg viewBox="0 0 288 512" focusable="false" role="img" class="ico__svg" data-v-eb2aca3a=""><path d="M209 233l-108-31c-12-4-21-15-21-28 0-17 13-30 30-30h66c12 0 24 4 34 11 6 4 14 3 20-2l34-34c7-7 6-19-1-25-25-19-56-30-87-30V16c0-9-7-16-16-16h-32c-9 0-16 7-16 16v48h-2C46 64-5 119 1 184c4 46 39 83 83 96l103 30c12 4 21 15 21 28 0 17-13 30-29 30h-67c-12 0-24-4-34-10-6-5-14-4-19 2l-35 34c-7 6-6 18 2 24 24 19 55 30 86 30v48c0 9 7 16 16 16h32c9 0 16-7 16-16v-48c47-1 90-29 106-73 21-61-15-125-73-142z"></path></svg>
+        </div>
+        <div class="topnav__btn  dropdown gift dropbtn">
+            <svg data-v-eb2aca3a="" viewBox="0 0 512 512" focusable="false" role="img" class="ico__svg"><path d="M479 100h-38a66 66 0 00-30-93c-24-12-51-7-71 11l-47 42a50 50 0 00-74 0l-47-42a65 65 0 00-71-12 66 66 0 00-40 68c1 9 5 18 10 26H33c-18 0-33 15-33 33v50c0 9 7 17 17 17h478c10 0 17-8 17-17v-50c0-18-15-33-33-33zm-273-6v6h-79a33 33 0 1122-58l57 52zm211-24c-1 17-17 30-34 30h-77v-6l56-51c8-8 20-11 31-8 16 5 25 18 24 35zM33 233v245c0 19 15 34 34 34h156V233H33zm256 0v279h156c19 0 34-15 34-34V233H289z"></path></svg>        
+        </div>
+        <div class="topnav__btn dropdown login dropbtn">Đăng ký</div>
+        <div class="topnav__btn  dropdown signup dropbtn">Đăng nhập</div>
+        <div class="dropdown">
+            <button class="dropbtn settings"><svg data-v-eb2aca3a="" viewBox="0 0 512 512" focusable="false" role="img" class="ico__svg"><path d="M487 316l-42-25c4-23 4-47 0-70l42-25c5-3 7-8 6-14-11-35-30-68-55-94-4-4-10-5-15-3l-42 25c-18-15-39-27-61-35V26c0-6-4-11-9-12-37-8-75-8-110 0-5 1-9 6-9 12v49c-22 8-43 20-61 35L89 86c-5-3-11-2-15 2-25 26-44 59-55 94-1 6 1 12 6 14l42 25c-4 23-4 47 0 70l-42 25c-5 3-7 8-6 14 11 35 30 68 55 94 4 4 10 5 15 3l42-25c18 15 39 27 61 35v49c0 6 4 11 10 12 36 8 74 8 109 0 5-1 9-6 9-12v-49c22-8 43-20 61-35l43 25c4 2 11 2 14-3 25-26 44-59 55-94 2-6-1-12-6-14zm-231 20a80 80 0 110-160 80 80 0 010 160z"></path></svg> 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">19:45 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">VI
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div> 
+        <div class="topnav__btn dropdown phone dropbtn">
+            <svg viewBox="0 0 10 10" focusable="false" role="img" class="ico__svg" data-v-eb2aca3a=""><path d="M9.7 7l-2.2-.9c-.2-.1-.4 0-.5.1L6 7.4a6.8 6.8 0 01-3.4-3.5l1.2-1c.1-.1.2-.3.1-.5L2.9.2c-.1-.2-.3-.3-.5-.2L.4.5C.2.5 0 .7 0 .9c0 5 4.1 9.1 9.1 9.1.2 0 .4-.2.5-.4l.5-2c-.1-.3-.2-.5-.4-.6z"></path></svg>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url('src/images/slider.webp')">
+        <div class="swiper__wrapper">
+            <div class="container">
+                <div class="swiper__text">
+                    <h2>WELCOME PACKAGE UP TO</h2>
+                    <h1>$1500 + 150 FPS</h1>
+                    <h3>make your first deposit and get a bonus</h3>
+                </div>
+                <div class="swiper__line">
+                    <a href="#" class="swiper__button">
+                        Find out more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('src/images/slider.webp')">
+        <div class="swiper__wrapper">
+            <div class="container">
+                <div class="swiper__text">
+                    <h2>WELCOME PACKAGE UP TO</h2>
+                    <h1>$1500 + 150 FPS</h1>
+                    <h3>make your first deposit and get a bonus</h3>
+                </div>
+                <div class="swiper__line">
+                    <a href="#" class="swiper__button">
+                        Find out more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url('src/images/slider.webp')">
+        <div class="swiper__wrapper">
+            <div class="container">
+                <div class="swiper__text">
+                    <h2>WELCOME PACKAGE UP TO</h2>
+                    <h1>$1500 + 150 FPS</h1>
+                    <h3>make your first deposit and get a bonus</h3>
+                </div>
+                <div class="swiper__line">
+                    <a href="#" class="swiper__button">
+                        Find out more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="swiper__pagination">
+        <div class="swiper-prev">
+            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 1L2 7L8 13" stroke="#4DF472" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="swiper-next">
+            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 1L2 7L8 13" stroke="#4DF472" stroke-width="2"/>
+            </svg>
+        </div>
+    </div>  
+    <!-- If we need navigation buttons -->
 
-<h1>qweqwe</h1>
+  </div>
+    <section class="tile">
+        <div class="container">
+            <div class="tile__line">
+                <h3>Sports</h3>
+                <a href="#">See all products</a>
+            </div>
+            <div class="tile__grid">
+                <div class="tile__container">
+                    <div class="tile__item messi" style="background-image: url('src/images/sports.webp');">
+                        <div class="tile__header">Sports</div>
+                    </div>
+                </div>
+                <div class="tile__container">
+                    <div class="tile__item lepko" style="background-image: url('src/images/esports.webp');">
+                        <div class="tile__header">Esports</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <section class="casino tile">
+        <div class="container">
+            <div class="tile__line">
+                <h3>Casino</h3>
+                <a href="#">See all games</a>
+            </div>
+            <div class="infiniteslide infiniteslideGames">
+                <ul>
+                    <li class="infiniteslide__container">
+                        <div class="infiniteslide__item">
+                            <div class="infiniteslide__layout">
+                                <div class="button game">
+                                    play now
+                                </div>
+                                <div class="button demo">
+                                    play demo
+                                </div>
+                            </div>
+                            <img class="infiniteslide__img" src="src/images/game1.webp" alt="" />
+                        </div>
+                        <div class="infiniteslide__item">
+                            <div class="infiniteslide__layout">
+                                <div class="button game">
+                                    play now
+                                </div>
+                                <div class="button demo">
+                                    play demo
+                                </div>
+                            </div>
+                            <img class="infiniteslide__img" src="src/images/game2.webp" alt="" />
+                        </div>
+                        <div class="infiniteslide__item">
+                            <div class="infiniteslide__layout">
+                                <div class="button game">
+                                    play now
+                                </div>
+                                <div class="button demo">
+                                    play demo
+                                </div>
+                            </div>
+                            <img class="infiniteslide__img" src="src/images/game3.webp" alt="" />
+                        </div>
+                        <div class="infiniteslide__item">
+                            <div class="infiniteslide__layout">
+                                <div class="button game">
+                                    play now
+                                </div>
+                                <div class="button demo">
+                                    play demo
+                                </div>
+                            </div>
+                            <img class="infiniteslide__img" src="src/images/game4.webp" alt="" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> 
+    <section class="tile">
+        <div class="container">
+            <div class="tile__line">
+                <tile__button>Sports</tile__button>
+                <a href="#">See all products</a>
+            </div>
+            <div class="tile__grid">
+                <div class="tile__container">
+                    <div class="tile__item women women1" style="background-image: url('src/images/live1.webp');">
+                        <div class="tile__button">Play now</div>
+                    </div>
+                </div>
+                <div class="tile__container">
+                    <div class="tile__item women women2" style="background-image: url('src/images/live2.webp');">
+                        <div class="tile__button">Play now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tile small">
+        <div class="container">
+            <div class="tile__grid">
+                <div class="tile__container">
+                    <div class="tile__item women women3" style="background-image: url('src/images/live3.webp');">
+                        <div class="tile__button">Play now</div>
+                    </div>
+                </div>
+                <div class="tile__container">
+                    <div class="tile__item women women4" style="background-image: url('src/images/live4.webp');">
+                        <div class="tile__button">Play now</div>
+                    </div>
+                </div>
+                <div class="tile__container">
+                    <div class="tile__item women women5" style="background-image: url('src/images/live5.webp');">
+                        <div class="tile__button">Play now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section class="provider">
+        <div class="container">
+            <div class="tile__line">
+                <h3>Providers</h3>
+                <a href="#">See all providers</a>
+            </div>
+            <div class="infiniteslide infiniteslideProviders">
+                <ul>
+                    <li class="infiniteslide__container provider">
+                        <div class="infiniteslide__item">
+                            <img class="infiniteslide__img" src="src/images/provider1.webp" alt="" />
+                        </div>
+                        <div class="infiniteslide__item">
+                            <img class="infiniteslide__img" src="src/images/provider2.webp" alt="" />
+                        </div>
+                        <div class="infiniteslide__item">
+                            <img class="infiniteslide__img" src="src/images/provider3.webp" alt="" />
+                        </div>
+                        <div class="infiniteslide__item">
+                            <img class="infiniteslide__img" src="src/images/provider4.webp" alt="" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section class="ambasadors">
+        <div class="container">
+            <div class="tile__line">
+                <h3>Ambasadors</h3>
+                <a href="#">See all ambasadors</a>
+            </div>
+
+            <div class="slick-slider">
+                <div class="ambasadors__item">
+                    <img src="src/images/ambasador1.webp" alt="">
+                </div>
+                <div class="ambasadors__item">
+                    <img src="src/images/ambasador2.webp" alt="">
+                </div>
+                <div class="ambasadors__item">
+                    <img src="src/images/ambasador3.webp" alt="">
+                </div>
+                <div class="ambasadors__item">
+                    <img src="src/images/ambasador1.webp" alt="">
+                </div>
+                <div class="ambasadors__item">
+                    <img src="src/images/ambasador2.webp" alt="">
+                </div>
+                <div class="ambasadors__item">
+                    <img src="src/images/ambasador3.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+            <ul class="footer__menu">
+                <li class="footer__item button"><img src="src/images/18.webp" alt=""></li>
+                <li class="footer__item"><a href="#">Giới thiệu chúng tôis</a></li>
+                <li class="footer__item"><a href="">Điều khoản & Điều kiện</a></li>
+                <li class="footer__item"><a href="">Liên hệ</a></li>
+                <li class="footer__item"><a href="">Đăng ký</a></li>
+                <li class="footer__item"><a href="">Thể Thao</a></li>
+                <li class="footer__item"><a href="">Casino</a></li>
+                <li class="footer__item button"><img src="src/images/arrow_top.webp" alt=""></li>
+            </ul>
+    </footer>
+    <div class="footer__bottom">
+        <div class="bottom__item button"><img src="src/images/arrow_top.webp" alt=""></div>
+        <div class="bottom__item">Move Up</div>
+        <div class="bottom__item button"><img src="src/images/arrow_top.webp" alt=""></div>
+    </div>
+</main>
 </body>
+
+
+        
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/infiniteslidev2/infiniteslidev2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/slick.min.js"></script>
+
+<script type="text/javascript">
+	$(function(){
+		$('.infiniteslideGames').infiniteslide({
+			'speed': 100, //speed this is px/min
+			'direction': 'left', //choose  up/down/left/right
+			'pauseonhover': true, //if true,stop onmouseover
+			'responsive': false, //width/height recalculation on window resize. child element's width/height define %/vw/vh,this set true.
+			'clone': 3 //if child elements are too few (elements can't "infinite"), set 2 or over.
+		});
+	});
+    $(function(){
+		$('.infiniteslideProviders').infiniteslide({
+			'speed': 50, //speed this is px/min
+			'direction': 'left', //choose  up/down/left/right
+			'pauseonhover': false, //if true,stop onmouseover
+			'responsive': false, //width/height recalculation on window resize. child element's width/height define %/vw/vh,this set true.
+			'clone': 3 //if child elements are too few (elements can't "infinite"), set 2 or over.
+		});
+	});
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
+  }
+})
+
+jQuery('.slick-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '60px',
+    mobileFirst:true,
+    arrows: false,
+    responsive: [
+    {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true
+        }
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+});
+
+</script>
+</body>
+
 
 </html>

@@ -1,5 +1,5 @@
 .ambasadors{
-    background-image: url('../src/images/ambasadors.png');
+    background-image: url('../src/images/ambasadors.webp');
     width: 100%;
     background-size: cover;
     min-height: 590px;
@@ -43,7 +43,7 @@
         padding-top: 15px;
     }
     .slick-arrow{
-        background-image: url('../src/images/arrow.png');
+        background-image: url('../src/images/arrow.webp');
         height: 48px;
         width: 48px;
         background-size: cover;
@@ -56,7 +56,7 @@
             color: rgba(0,0,0,0);
             outline: none;
             background: rgba(0,0,0,0);
-            background-image: url('../src/images/arrow.png');
+            background-image: url('../src/images/arrow.webp');
             background-size: cover;
         }
         @media (max-width: 450px){

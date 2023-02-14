@@ -494,6 +494,9 @@ body {
           transform: scale(1.01);
   cursor: pointer;
 }
+.tile__item:hover .tile__text {
+  opacity: 1;
+}
 @media screen and (max-width: 1280px) {
   .tile__item {
     height: 223px;
@@ -568,6 +571,26 @@ body {
 @media screen and (max-width: 1280px) {
   .tile__header {
     font-size: 32px;
+  }
+}
+.tile__text {
+  color: white;
+  padding-bottom: 25px;
+  font-size: 25px;
+  z-index: 100;
+  max-width: 60%;
+  opacity: 0;
+}
+@media screen and (max-width: 1280px) {
+  .tile__text {
+    padding-bottom: 0px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tile__text {
+    padding-bottom: 10px;
+    font-size: 14px;
   }
 }
 

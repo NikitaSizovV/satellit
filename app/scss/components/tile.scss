@@ -57,6 +57,9 @@
         &:hover{
             transform: scale(1.01);
             cursor: pointer;
+                .tile__text{
+                    opacity: 1;
+                }
         }
         @media screen and (max-width: 1280px) {
             height: 223px;
@@ -117,6 +120,23 @@
         line-height: 56px;
         @media screen and (max-width: 1280px) {
             font-size: 32px;
+        }
+    }
+
+    &__text{
+        color: white;
+        padding-bottom: 25px;
+        font-size: 25px;
+        z-index: 100;
+        max-width: 60%;
+        opacity: 0;
+        @media screen and (max-width: 1280px) {
+            padding-bottom: 0px;
+            font-size: 17px;
+        }
+        @media screen and (max-width: 400px) {
+            padding-bottom: 10px;
+            font-size: 14px;
         }
     }
 }

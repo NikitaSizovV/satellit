@@ -878,12 +878,12 @@ body {
 }
 .footer__text {
   color: white;
-  font-size: 18px;
+  font-size: 10px;
   padding: 0 0 20px 0;
 }
 @media (max-width: 700px) {
   .footer__text {
-    font-size: 14px;
+    font-size: 8px;
   }
 }
 .footer__menu {
